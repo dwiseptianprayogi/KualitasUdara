@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#039516"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvWaktuRiwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Waktu:"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWaktuRiwayatVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/tvWaktuRiwayat"
+            android:text="Null"
+            android:textColor="#FFFF" />
+        <TextView
+            android:id="@+id/tvGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Gas:"
+            android:layout_below="@+id/tvWaktuRiwayat"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGasVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/tvGas"
+            android:layout_below="@id/tvWaktuRiwayat"
+            android:text="Null"
+            android:textColor="#FFFF" />
+        <TextView
+            android:id="@+id/tvDebu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Debu:"
+            android:layout_below="@+id/tvGas"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDebuVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/tvDebu"
+            android:layout_below="@id/tvGas"
+            android:text="Null"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/tvStatusRiwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDebu"
+            android:text="Status:"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatusRiwayatPemakaianVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Null"
+            android:textColor="#FFFAC3"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/tvStatusRiwayat"
+            android:layout_below="@+id/tvDebu"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="2dp"-->
+<!--    >-->
+<!--    <TableRow-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvHistoryTime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--            android:text="No Data Time Avaliable"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvHistoryPM2.5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="No Data Time Avaliable"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvHistoryCO2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="No Data Status Avaliable"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvHistoryStatus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:text="No Data Status Avaliable"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+
+<!--    </TableRow>-->
+
+<!--</TableLayout>-->

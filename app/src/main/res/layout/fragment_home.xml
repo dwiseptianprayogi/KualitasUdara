@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.home.HomeFragment">
+    <TextView
+        android:id="@+id/tvJudulHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="DETEKSI DINI KUALITAS UDARA DALAM RUANGAN"
+        android:textStyle="bold"
+        android:textColor="#039516"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDataSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudulHome"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgPm2.5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/airpollution"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/tvDataSensorPm2.5Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data PM 2.5: "
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/imgPm2.5"
+                android:textColor="#039516"
+                />
+
+            <TextView
+                android:id="@+id/tvDataSensorPm2.5HomeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDataSensorPm2.5Home"
+                android:text="Null"
+                android:textColor="#039516" />
+
+            <TextView
+                android:id="@+id/tvDataSensorPm2.5HomeVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDataSensorPm2.5HomeVal"
+                android:text=" μg/m3"
+                android:textColor="#039516" />
+            <TextView
+                android:id="@+id/tvStatuSensorPm2.5Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status PM 2.5: "
+                android:textStyle="bold"
+                android:textColor="#039516"
+                android:layout_below="@+id/tvDataSensorPm2.5Home"
+                android:layout_toRightOf="@+id/imgPm2.5"
+                />
+
+            <TextView
+                android:id="@+id/tvStatusSensorPm2.5HomeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvStatuSensorPm2.5Home"
+                android:layout_toRightOf="@+id/imgPm2.5"
+                android:text="Null"
+                android:textColor="#039516"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDataSensor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/cvDataSensor"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imgCO2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/co2"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/tvDataSensorCO2Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Data CO2: "
+                android:textColor="#039516"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/imgCO2"/>
+
+            <TextView
+                android:id="@+id/tvDataSensorCO2HomeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDataSensorCO2Home"
+                android:text="Null"
+                android:textColor="#039516" />
+            <TextView
+                android:id="@+id/tvDataSensorCO2HomeVal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDataSensorCO2HomeVal"
+                android:text=" ppm"
+                android:textColor="#039516" />
+            <TextView
+                android:id="@+id/tvStatuSensorCO2Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status CO2: "
+                android:textColor="#039516"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDataSensorCO2Home"
+                android:layout_toRightOf="@+id/imgCO2"
+                />
+
+            <TextView
+                android:id="@+id/tvStatusSensorCO2HomeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvStatuSensorCO2Home"
+                android:layout_toRightOf="@+id/imgCO2"
+                android:text="Null"
+                android:textColor="#039516"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
